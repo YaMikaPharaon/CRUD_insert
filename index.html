@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car2Run</title>
+</head>
+<body>
+    <!-- Formulaire d'ajout de données avec la method post comme dans le fichier PHP  -->
+    <!-- Le formulaire redirige envoie les données au fichier "insert.php" qui 
+         lui même envoie les données à la base de données et vous redirige sur 
+         la page 'index.html'  -->
+    <form action="insert.php" method="post">
+        <input type="text" name="marque" placeholder="Entrer votre marque">
+        <input type="text" name="modele" placeholder="Entrer votre modele">
+        <input type="text" name="motorisation" placeholder="Entrer votre motorisation">
+        <input type="number" name="puissance" placeholder="Entrer votre puissance">
+        <input type="text" name="origine" placeholder="Entrer votre origine">
+        <input type="text" name="couleur" placeholder="Entrer votre couleur">
+        <input type="number" name="prix" placeholder="Entrer votre prix">
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
